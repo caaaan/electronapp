@@ -2,6 +2,7 @@ const {app, BrowserWindow} = require('electron');
 const url = require('url');
 const path = require('path');
 const { main } = require('ts-node/dist/bin');
+require('ts-node/register');
 
 function createMainWindow(){
     const mainWindow = new BrowserWindow({
