@@ -14,7 +14,9 @@ function createMainWindow(){
             preload: path.join(__dirname, 'preload.js')
             }
     });
+    mainWindow.loadURL(`file://${path.join(__dirname, '../public/index.html')}`);
 
+    
     const starturl = 'http://localhost:3000'
     console.log(path.join(__dirname, './my-app/build/index.html'))
     mainWindow.loadURL(starturl);
