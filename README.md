@@ -9,11 +9,11 @@ Uygulamayı çalıştırmak için aynı anda farklı terminallerde komut çalı�
 
 eğer eksik kurulum olduysa aşağıdaki listeden eksik olan dependencyleri kontrol edip indirebilirsiniz.
 
-backend dependencies:
+***backend dependencies:***
 1. "cors"
 2. "express"
 3. "morgan" 
-frontend dependencies:
+***frontend dependencies:***
 1. "@testing-library/jest-dom”
 2. "@testing-library/react"
 3. "@testing-library/user-event"
@@ -37,7 +37,7 @@ frontend dependencies:
 21. "url"
 22. "web-vitals"
 23. "yup"
-electronclient dependencies:
+***electronclient dependencies:***
 1. "axios"
 2. "electron"
 3. "form-data"
