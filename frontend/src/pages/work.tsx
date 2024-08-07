@@ -15,21 +15,35 @@ const Work: React.FC = () => {
     setTasks(tasks.concat(resp.data));
     setLoading(false);
   };
+  const handleDelete = (id: number) => {
+    ipcRenderer.send('remove:task', id); // Send IPC event to remove task
+  };
   useEffect(() => {
     setup();
     ipcRenderer.on('task:added', (event: any, data: any) => {
       setup();
     });
+    ipcRenderer.on('task:removed', (event: any, data: any) => {
+      setup();
+    });
   }, []);
 
   return (
-    <div>
+    <div className="p-4">
       {!loading ? (
-        <ul>
+        <ul className="space-y-4">
           {tasks &&
-            tasks.map((task) => {
-              return <li key={task.id}>{task.description}</li>;
-            })}
+            tasks.map((task) => (
+              <li key={task.id} className="flex items-center space-x-4 p-4 border rounded-lg shadow-md">
+                <span className="flex-1">{task.description}</span>
+                <button
+                  onClick={() => handleDelete(task.id)}
+                  className="btn btn-error  btn-sm"
+                >
+                  Delete
+                </button>
+              </li>
+            ))}
         </ul>
       ) : (
         <div>Loading...</div>

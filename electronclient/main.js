@@ -46,3 +46,4 @@ ipcMain.on('file:upload', async (e, opt) => {
   mainWindow.webContents.send('upload:complete');
   return true;
 });
+
