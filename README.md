@@ -5,7 +5,7 @@ Uygulamayı çalıştırmak için aynı anda farklı terminallerde komut çalı�
 - 3. terminalde de electronclient klasörüne girip `npm run startn` komutunu çalıştırın (bu electron uygulamasını açacaktır).
 # Kurulum
 
- Gerekli dependencyleri indirmek için teker teker frontend, electronclient ve backend klasörlerine girip terminalde `npm install` komutunu çalıştırabilirsiniz. Bu komut ile girdiğiniz klasörün içindeki package.json dosyalarındaki dependency'leri indirebilirsiniz.
+ Gerekli dependencyleri indirmek için teker teker terminal'den frontend, electronclient ve backend klasörlerine girip `npm install` komutunu çalıştırabilirsiniz. Bu komut ile girdiğiniz klasörün içindeki package.json dosyalarındaki dependency'leri indirebilirsiniz.
 
 eğer eksik kurulum olduysa aşağıdaki listeden eksik olan dependencyleri kontrol edip indirebilirsiniz.
 
