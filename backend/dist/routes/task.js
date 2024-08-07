@@ -10,11 +10,11 @@ router.get('/tasks', (req, res) => {
 });
 // POST endpoint to update the list of items
 router.post('/task', (req, res) => {
-    const { newItem } = req.body;
-    if (typeof newItem !== 'string') {
+    const { description } = req.body;
+    if (typeof description !== 'string') {
         return res.status(400).json({ error: 'Invalid item format. Must be a string.' });
     }
-    items.push(newItem);
+    items.push(description);
     res.status(201).json({ message: 'Item added successfully', items });
 });
 exports.default = router;

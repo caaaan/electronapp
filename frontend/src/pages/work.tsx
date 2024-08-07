@@ -11,7 +11,7 @@ const Work: React.FC = () => {
 
   const setup = async () => {
     setLoading(true);
-    const resp = await axios.get('http://127.0.0.1:8000/api/task');
+    const resp = await axios.get('http://localhost:8000/api/tasks');
     setTasks(tasks.concat(resp.data));
     setLoading(false);
   };
