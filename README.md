@@ -12,7 +12,8 @@ eğer eksik kurulum olduysa aşağıdaki listeden eksik olan dependencyleri kont
 ***backend dependencies:***
 1. "cors"
 2. "express"
-3. "morgan" 
+3. "morgan"
+   
 ***frontend dependencies:***
 1. "@testing-library/jest-dom”
 2. "@testing-library/react"
@@ -37,6 +38,7 @@ eğer eksik kurulum olduysa aşağıdaki listeden eksik olan dependencyleri kont
 21. "url"
 22. "web-vitals"
 23. "yup"
+    
 ***electronclient dependencies:***
 1. "axios"
 2. "electron"
