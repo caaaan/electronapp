@@ -1,6 +1,6 @@
 # Uygulamayı çalıştırmak
 Uygulamayı çalıştırmak için aynı anda farklı terminallerde komut çalıştırmak gerekmektedir.
-- 1. terminalde backend dosyasına girip `npm run start` komutunu çalıştır, compile'ladıktan sonra process'i öldürebilirsiniz veya farklı bi terminalde backend klasörünün içinde oluşacak dist klasörüne girip `node api.js` komutunu çalıştırın (bu api server'ı çalıştırır).
+- 1. terminalde backend klasörüne girip `npm run start` komutunu çalıştırın, compile'ladıktan sonra process'i öldürebilirsiniz veya farklı bi terminalde backend klasörünün içinde oluşacak dist klasörüne girip `node api.js` komutunu çalıştırın (bu api server'ı çalıştırır).
 - 2. terminalde frontend klasörüne girip `npm run build` yapın sonra `npm run start` komutunu çalıştırın (bu frontend react projesini çalıştırır).
 - 3. terminalde de electronclient klasörüne girip `npm run startn` komutunu çalıştırın (bu electron uygulamasını açacaktır).
 # Kurulum
