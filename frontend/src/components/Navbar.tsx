@@ -4,7 +4,7 @@ export const NavBar: React.FC = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl" href="/Index">
+        <a className="btn btn-ghost normal-case text-xl" href="/work">
           Electron app
         </a>
       </div>
@@ -29,7 +29,7 @@ export const NavBar: React.FC = () => {
             </a>
             <ul className="p-2 bg-base-100">
               <li>
-                <a href="/document/index">Documents</a>
+                <a>Documents</a>
               </li>
               <li>
                 <a>Submenu 2</a>

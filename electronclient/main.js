@@ -47,3 +47,13 @@ ipcMain.on('file:upload', async (e, opt) => {
   return true;
 });
 
+ipcMain.on('remove:task', async (e, id) => {
+  try {
+    const response = await TodoService.handleTaskRemove(id);
+    mainWindow.webContents.send('task:removed', { id });
+  } catch (error) {
+    console.error('Error removing task:', error);
+  }
+});
+
+
